@@ -3,7 +3,7 @@
 /**
  * main - prints "Programming is like building a multilingual puzzle"
  * Return: 0 if compiled and run successfully else diffrent from zero
- * /
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
