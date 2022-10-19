@@ -4,7 +4,7 @@
  * main - prints _putchar, followed by a new line
  * Return: 0 if success and something diff otherwise
  */
-int main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -14,7 +14,6 @@ int main()
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	_putchar('/n');
 
 	return (0);
 }
