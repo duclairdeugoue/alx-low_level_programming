@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = argv[2];
+	operator = *argv[2];
 
-	cal = get_op_func(operator);
+	cal = get_op_func(&operator);
 
 	if (!cal)
 	{
