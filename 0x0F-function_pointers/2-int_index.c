@@ -17,14 +17,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int *temp_arr, flag, pos;
 
 	if (size <= 0)
-		return -1;
-	
+		return (-1);
+
 	flag = 0;
-	
-	for(i = 0; i < size; i++)
+
+	for (i = 0; i < size; i++)
 	{
-		
-		if (cmp(array[i] != 0 ))
+		if (cmp(array[i]) != 0)
 		{
 			temp_arr[i] = array[i];
 			flag++;
@@ -32,7 +31,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	}
 
 	if (flag != 0)
-		return temp_arr[0];
+		return (temp_arr[0]);
 
-	return -1;
+	return (-1);
 }
