@@ -14,24 +14,18 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	int index_v[3], flag;
 
 	if (size <= 0)
 		return (-1);
 
-	flag = 0;
 
 	for (i = 0; i < size; i++)
 	{
 		if (cmp(array[i]) != 0)
 		{
-			index_v[i] = i;
-			flag++;
+			return (i);
 		}
 	}
-
-	if (flag != 0)
-		return (index_v[0]);
 
 	return (-1);
 }
