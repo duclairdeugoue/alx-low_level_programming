@@ -21,15 +21,16 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = *argv[2];
 
-	cal = get_op_func(&operator);
+	cal = get_op_func(argv[2]);
 
 	if (!cal)
 	{
 		printf("Error\n");
 		exit(99);
 	}
+	
+	operator = *argv[2];
 
 	if ((operator == '/' || operator == '%') && num2 == 0)
 	{
