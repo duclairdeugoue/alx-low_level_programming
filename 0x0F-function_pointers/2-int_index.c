@@ -14,25 +14,24 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	unsigned int i;
-	int *temp_arr, flag;
+	int index_v, flag;
 
 	if (size <= 0)
 		return (-1);
 
 	flag = 0;
-	temp_arr = (int *) malloc(sizeof(int));
 
 	for (i = 0; i < size; i++)
 	{
 		if (cmp(array[i]) != 0)
 		{
-			temp_arr[i] = array[i];
+			index_v = array[i];
 			flag++;
 		}
 	}
 
 	if (flag != 0)
-		return (temp_arr[0]);
+		return (index_v);
 
 	return (-1);
 }
