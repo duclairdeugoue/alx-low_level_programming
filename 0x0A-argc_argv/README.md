@@ -9,3 +9,5 @@ File 2-args.c is a program that prints all arguments it receives.
 File 3-mul.c is a program that multiplies two numbers.
 
 File 4-add.c is a program that adds positive numbers.
+
+File 100-change.c is a program that prints the minimum number of coins to make change for an amount of money
